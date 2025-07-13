@@ -18,7 +18,7 @@ function desbloquearMaterias() {
     if (correlativas && correlativas !== "") {
       const requisitos = correlativas.split(',');
       const cumplidos = requisitos.every(id => 
-        document.querySelector(.materia[data-id="${id}"])?.classList.contains('tachada')
+        document.querySelector(.`materia[data-id="${id}"])?.classList.contains('tachada')
       );
       
       if (cumplidos) {
