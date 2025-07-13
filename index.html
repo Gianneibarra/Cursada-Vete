@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malla Interactiva - Para Cursar</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Malla Interactiva - Para Cursar</h1>
+
+  <!-- 1º Año -->
+  <h2>1º Año</h2>
+  <div class="grid">
+    <div class="materia" data-id="intro" data-correlativas="">Introducción a las Ciencias Básicas</div>
+    <div class="materia" data-id="anatomia1" data-correlativas="intro">Anatomía I</div>
+    <div class="materia" data-id="bioestadistica" data-correlativas="intro">Bioestadística</div>
+    <div class="materia" data-id="biofisica" data-correlativas="intro">Biofísica</div>
+    <div class="materia" data-id="bioquimica" data-correlativas="intro">Bioquímica</div>
+    <div class="materia" data-id="histologia" data-correlativas="intro">Histología y Embriología</div>
+  </div>
+
+  <!-- 2º Año -->
+  <h2>2º Año</h2>
+  <div class="grid">
+    <div class="materia" data-id="anatomia2" data-correlativas="anatomia1,histologia">Anatomía II</div>
+    <div class="materia" data-id="fisiologia" data-correlativas="anatomia1,bioestadistica,biofisica,histologia,anatomia2,bioquimica">Fisiología</div>
+    <div class="materia" data-id="bienestar" data-correlativas="fisiologia">Bienestar Animal</div>
+    <div class="materia" data-id="genetica" data-correlativas="bioestadistica,histologia,bioquimica">Genética</div>
+    <div class="materia" data-id="ingles" data-correlativas="intro">Inglés Técnico</div>
+    <div class="materia" data-id="microbiologia" data-correlativas="bioestadistica,biofisica,histologia,bioquimica">Microbiología</div>
+    <div class="materia" data-id="sociologia" data-correlativas="intro">Sociología Rural y Urbana</div>
+    <div class="materia" data-id="zoologia" data-correlativas="anatomia1,bioestadistica,histologia">Zoología y Ecología</div>
+  </div>
+
+  <!-- 3º Año -->
+  <h2>3º Año</h2>
+  <div class="grid">
+    <div class="materia" data-id="patologia1" data-correlativas="fisiologia,microbiologia">Patología I</div>
+    <div class="materia" data-id="farmacologia" data-correlativas="fisiologia,microbiologia">Farmacología</div>
+    <div class="materia" data-id="tecnologia" data-correlativas="microbiologia,zoologia">Tecnología de los Alimentos</div>
+    <div class="materia" data-id="quimica_bromatologia" data-correlativas="bioquimica">Química y Bromatología</div>
+    <div class="materia" data-id="parasitologia" data-correlativas="microbiologia,zoologia">Parasitología</div>
+    <div class="materia" data-id="patologia2" data-correlativas="patologia1">Patología II</div>
+    <div class="materia" data-id="toxicologia" data-correlativas="farmacologia">Toxicología</div>
+  </div>
+
+  <!-- 4º Año -->
+  <h2>4º Año</h2>
+  <div class="grid">
+    <div class="materia" data-id="clinica_medica1" data-correlativas="patologia2,farmacologia,parasitologia">Clínica Médica I</div>
+    <div class="materia" data-id="clinica_quirurgica1" data-correlativas="patologia2,farmacologia">Clínica Quirúrgica I</div>
+    <div class="materia" data-id="semiologia" data-correlativas="patologia2,farmacologia">Semiología</div>
+    <div class="materia" data-id="produccion_bovina" data-correlativas="zoologia">Producción de Bovinos</div>
+    <div class="materia" data-id="epidemiologia" data-correlativas="microbiologia,parasitologia">Epidemiología</div>
+    <div class="materia" data-id="obstetricia" data-correlativas="anatomia2,fisiologia">Obstetricia</div>
+    <div class="materia" data-id="produccion_porcinocultura" data-correlativas="zoologia">Producción Porcina</div>
+    <div class="materia" data-id="produccion_avicola" data-correlativas="zoologia">Producción Avícola</div>
+    <div class="materia" data-id="economia" data-correlativas="sociologia">Economía y Administración Rural</div>
+  </div>
+  
+  <!-- 5º Año -->
+  <h2>5º Año</h2>
+  <div class="grid">
+    <div class="materia" data-id="clinica_medica2" data-correlativas="clinica_medica1">Clínica Médica II</div>
+    <div class="materia" data-id="clinica_quirurgica2" data-correlativas="clinica_quirurgica1">Clínica Quirúrgica II</div>
+    <div class="materia" data-id="obstetricia2" data-correlativas="obstetricia">Obstetricia II</div>
+    <div class="materia" data-id="clinica_rumiantes" data-correlativas="clinica_medica1,produccion_bovina">Clínica de Rumiantes</div>
+    <div class="materia" data-id="clinica_porcinocultura" data-correlativas="produccion_porcinocultura">Clínica Porcina</div>
+    <div class="materia" data-id="clinica_avicola" data-correlativas="produccion_avicola">Clínica Avícola</div>
+    <div class="materia" data-id="higiene" data-correlativas="tecnologia,epidemiologia">Higiene y Legislación Veterinaria</div>
+    <div class="materia" data-id="sanidad" data-correlativas="epidemiologia,produccion_bovina,produccion_porcinocultura,produccion_avicola">Sanidad Animal</div>
+  </div>
+
+  <!-- 6º Año -->
+  <h2>6º Año</h2>
+  <div class="grid">
+    <div class="materia" data-id="etica" data-correlativas="clinica_medica2,clinica_quirurgica2,obstetricia2">Ética y Deontología</div>
+    <div class="materia" data-id="gestion" data-correlativas="economia">Gestión y Proyectos</div>
+    <div class="materia" data-id="practica" data-correlativas="clinica_medica2,clinica_quirurgica2,clinica_rumiantes,clinica_porcinocultura,clinica_avicola,sanidad,higiene">Práctica Profesional Supervisada</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
